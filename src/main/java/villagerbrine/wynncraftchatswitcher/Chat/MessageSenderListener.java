@@ -110,8 +110,10 @@ public class MessageSenderListener {
     }
     @SubscribeEvent
     public void antiAfk(MouseEvent event) {
+       if (ticks > 6000) {
+            chatShowMessage(ChatFormatting.GREEN +"You are now not" + ChatFormatting.AQUA + " AFK" + ChatFormatting.GREEN + "!");
+        }
         ticks = 0;
-        chatShowMessage(ChatFormatting.GREEN +"You are now not" + ChatFormatting.AQUA + " AFK" + ChatFormatting.GREEN + "!");
     }
     public static void chatShowMessage(String string) {
         Minecraft.getMinecraft().player.sendMessage(new TextComponentString("[" + ChatFormatting.RED + "BombNotifier" + ChatFormatting.RESET + "]: " + string));
