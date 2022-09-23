@@ -1,4 +1,4 @@
-package villagerbrine.wynncraftchatswitcher.Chat.Commands;
+package villagerbrine.wynncraftbombnotifier.Chat.Commands;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.command.CommandException;
@@ -9,11 +9,10 @@ import net.minecraft.util.math.BlockPos;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import static villagerbrine.wynncraftchatswitcher.Chat.MessageSenderListener.*;
-import static villagerbrine.wynncraftchatswitcher.WynnCraftBombNotifier.boolToStringMap;
+import static villagerbrine.wynncraftbombnotifier.Chat.MessageSenderListener.*;
+import static villagerbrine.wynncraftbombnotifier.WynnCraftBombNotifier.boolToStringMap;
 
 public class ActivateModCommand implements ICommand {
     @Override

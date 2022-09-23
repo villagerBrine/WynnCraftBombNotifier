@@ -1,4 +1,4 @@
-package villagerbrine.wynncraftchatswitcher;
+package villagerbrine.wynncraftbombnotifier;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.ClientCommandHandler;
@@ -7,8 +7,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.Mod;
-import villagerbrine.wynncraftchatswitcher.Chat.Commands.ActivateModCommand;
-import villagerbrine.wynncraftchatswitcher.Chat.MessageSenderListener;
+import villagerbrine.wynncraftbombnotifier.Chat.Commands.ActivateModCommand;
+import villagerbrine.wynncraftbombnotifier.Chat.MessageSenderListener;
 
 import java.util.HashMap;
 

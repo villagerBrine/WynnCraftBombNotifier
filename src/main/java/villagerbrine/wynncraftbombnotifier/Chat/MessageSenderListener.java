@@ -1,8 +1,7 @@
-package villagerbrine.wynncraftchatswitcher.Chat;
+package villagerbrine.wynncraftbombnotifier.Chat;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
@@ -13,12 +12,11 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.client.event.MouseEvent;
-import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-import static villagerbrine.wynncraftchatswitcher.WynnCraftBombNotifier.getMinecraftServer;
+import static villagerbrine.wynncraftbombnotifier.WynnCraftBombNotifier.getMinecraftServer;
 
 
 public class MessageSenderListener {
@@ -110,7 +108,7 @@ public class MessageSenderListener {
     }
     @SubscribeEvent
     public void antiAfk(MouseEvent event) {
-       if (ticks > 6000) {
+        if (ticks > 6000) {
             chatShowMessage(ChatFormatting.GREEN +"You are now not" + ChatFormatting.AQUA + " AFK" + ChatFormatting.GREEN + "!");
         }
         ticks = 0;
